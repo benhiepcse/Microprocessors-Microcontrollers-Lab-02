@@ -1,0 +1,8 @@
+../Core/Src/main.c:68:6:display7SEG	3
+../Core/Src/main.c:93:6:displayCurrentLED	2
+../Core/Src/main.c:116:5:main	1
+../Core/Src/main.c:166:6:SystemClock_Config	3
+../Core/Src/main.c:203:13:MX_TIM2_Init	4
+../Core/Src/main.c:248:13:MX_GPIO_Init	1
+../Core/Src/main.c:288:6:HAL_TIM_PeriodElapsedCallback	3
+../Core/Src/main.c:309:6:Error_Handler	1

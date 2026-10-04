@@ -1,0 +1,12 @@
+../Core/Src/main.c:141:16:getSegmentPattern	11
+../Core/Src/main.c:160:13:display7SEG	3
+../Core/Src/main.c:178:13:selectNextDigit	2
+../Core/Src/main.c:198:13:displayMatrixColumn	3
+../Core/Src/main.c:228:13:advanceZoomFrame	2
+../Core/Src/main.c:240:13:initializeDisplays	4
+../Core/Src/main.c:299:5:main	4
+../Core/Src/main.c:365:6:SystemClock_Config	3
+../Core/Src/main.c:401:13:MX_TIM2_Init	4
+../Core/Src/main.c:446:13:MX_GPIO_Init	1
+../Core/Src/main.c:495:6:HAL_TIM_PeriodElapsedCallback	5
+../Core/Src/main.c:532:6:Error_Handler	1
