@@ -72,6 +72,7 @@ static void MX_TIM2_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
 /* SEG0..SEG6 thuộc GPIOB */
 static const uint16_t segmentPins[7] = {
     SEG0_Pin, SEG1_Pin, SEG2_Pin, SEG3_Pin,
@@ -224,6 +225,16 @@ static void displayMatrixColumn(uint8_t column)
     activeColumn = column;
 }
 
+void updateLEDMatrix(int index)
+{
+    if (index < 0 || index >= (int)MATRIX_SIZE)
+    {
+        return;
+    }
+
+    displayMatrixColumn((uint8_t)index);
+}
+
 /* Đổi kích thước theo chuỗi nhỏ -> vừa -> lớn -> vừa */
 static void advanceZoomFrame(void)
 {
@@ -336,7 +347,7 @@ int main(void)
   {
 	    for (uint8_t column = 0; column < MATRIX_SIZE; column++)
 	    {
-	        displayMatrixColumn(column);
+	    	updateLEDMatrix((int)column);
 	        HAL_Delay(COLUMN_HOLD_MS);
 	    }
 
